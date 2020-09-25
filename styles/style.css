@@ -1,0 +1,476 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14pt;
+}
+
+.wrapper {
+  padding: 0 calc(50% - 590px);
+}
+
+main {
+  min-height: 100vh;
+}
+
+/* Header section */
+
+.top-menu {
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.top-menu nav {
+  margin-left: 20px;
+}
+
+.top-menu__loggin {
+  display: flex;
+  padding: 10px 0px;
+}
+
+.top-menu__loggin li {
+  background-color: #8bc34a;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.top-menu__link {
+  color: #fff;
+  padding: 10px;
+  display: block;
+  text-transform: uppercase;
+  font-size: 10pt;
+}
+
+.top-menu__link:hover {
+  cursor: pointer;
+}
+
+#logout-button {
+  background-color: #929A9E;
+}
+
+.logo-banner {
+  background-color: #8bc34a;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: right;
+  font-size: 40pt;
+}
+
+.logo-banner a {
+  margin-right: 20px;
+}
+
+.logo-banner_name {
+  color: #fff;
+}
+
+.logo-banner svg {
+  fill: #fff;
+  height: 100%;
+  width: 5%; 
+}
+
+/* Search section */
+
+.search {
+  padding: 20px calc(50% - 250px);
+}
+
+.search__icon {
+  position: absolute;
+  fill: #8bc34a;
+  margin: 5px;
+  width: 24px;
+  height: 24px;
+}
+
+.search__input {
+  padding: 5px 0 5px 30px; 
+  width: 80%;
+  border-radius: 5px;
+  border: 1px solid #9e9e9e;
+}
+
+.search__input:focus, .book-forms__input:focus {
+  box-shadow: 1px 1px 2px 1px rgba(158, 158, 158, 0.3);
+}
+
+.search__button, .filter__apply-button, .filter__clear-button, .book-forms__button {
+  background-color: #8bc34a;
+  border: none;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.search__button:hover, .book-forms__button:hover {
+  cursor: pointer;
+  box-shadow: 1px 1px 2px 1px rgba(158, 158, 158, 0.3);
+}
+
+/* Filter section */
+
+.filter {
+  margin: 0 20px 0 20px;
+}
+
+.filter__toggle, .filter__form {
+  border-bottom: 2px solid rgba(158, 158, 158, 0.5);
+}
+
+.filter__toggle svg {
+  fill: #8bc34a;
+  vertical-align: text-bottom;
+  width: 40px;
+  height: 40px;
+}
+
+.filter__close-icon, .filter__open-icon {
+  float: right;
+}
+
+.filter__close-icon:hover, .filter__open-icon:hover {
+  fill: #424242;
+}
+
+.filter__close-icon:hover, .filter__open-icon:hover, .filter__clear-button:hover, 
+.filter__apply-button:hover {
+  cursor: pointer;
+}
+
+.filter__name {
+  font-size: 14pt;
+  text-transform: uppercase;
+}
+
+.filter__form {
+  padding: 10px 0;
+}
+
+.filter__category-name {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.filter__fieldsets {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.filter__form fieldset {
+  width: 33%;
+  padding: 5px;
+  border: none;
+}
+
+.filter__options {
+  height: 144px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.filter__book-copies .filter__options {
+  overflow: auto;  
+}
+
+.filter__amount {
+  width: 40%;
+  border-radius: 5px;
+  border: 1px solid #9e9e9e;
+  padding: 5px 10px;
+}
+
+/* Books catalog section */
+
+.books-catalog {
+  margin: 20px;
+}
+
+.books-catalog__book {
+  display: inline-block;
+  width: 48%;
+  margin-right: 2%; 
+  margin-bottom: 3%;
+  padding: 20px;
+  box-shadow: 0 2px 10px 2px rgba(158,158,158,0.7);
+  -webkit-box-shadow: 0 2px 10px 2px rgba(158,158,158,0.7);
+}
+
+.books-catalog__book-description {
+  display: flex;
+}
+
+.books-catalog__book-description img {
+  max-width: 40%;
+  height: 250px;
+}
+
+.books-catalog__book-info {
+  margin-left: 15px;
+}
+
+.books-catalog__book-info p:first-child {
+  font-weight: bold;
+}
+
+.books-catalog__book-info p:nth-child(2), .books-catalog__button {
+  font-size: 12pt;
+}
+
+.books-catalog__annotation {
+  font-size: 11pt;
+  margin-top: 10px;
+}
+
+.books-catalog__reference {
+  width: 25%;
+  padding: 6px;
+  background-color: #8bc34a;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  float: right;  
+  color: #fff;
+}
+
+.catalog-pages {
+  width: 90px;
+  margin: 0 auto;
+}
+
+.catalog-pages__menu {
+  display: flex;
+}
+
+.catalog-pages__left{
+  margin-right: 10px;
+}
+
+.catalog-pages__menu svg {
+  width: 40px;
+  height: 40px;
+  fill: #8bc34a;
+}
+
+.catalog-pages__menu svg:hover {
+  fill: #424242;
+}
+
+.catalog-pages__menu li:hover{
+  cursor: pointer;
+}
+
+/* Footer */
+
+footer .wrapper {
+  background-color: #bdbdbd;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  color: #424242;
+}
+
+.library-info, .social-media {
+  padding: 20px 0;
+  margin: 0 20px 0 20px;
+}
+
+.social-media svg {
+  fill: #424242;
+  height: 30px;
+  width: 30px;
+}
+
+.social-media svg:hover {
+  fill: #fff;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+/* common modal styles */
+.modal {
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #f7f3f2;
+  overflow: hidden;
+}
+
+.modal-cover {
+  margin: 30px 0 70px 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 420px;
+  padding: 50px 40px;
+  background: #fff;
+  box-sizing: border-box;
+}
+
+.login-input {
+  height: 54px;
+  padding: 28px 18px 10px;
+  font-size: 1em;
+  box-sizing: border-box;
+  text-align: start;
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 54px;
+  background: #F1F2F1;
+  padding: 28px 18px 10px;
+  color: #474D50;
+  font-size: 1em;
+  transition: none;
+  margin-bottom: 10px;
+  border: none;
+}
+
+.login-button {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  margin-top: 30px;
+  padding: 14px 15px 14px 15px;
+  cursor: pointer;
+  background: #A0C814;
+  color: #fff;
+  text-align: center;
+  line-height: 22px;
+  border: none;
+}
+
+.login-button__close {
+  background: #929A9E;
+}
+
+.login__message {
+  color: #f44336;
+  font-size: 12pt;
+}
+
+/* Account page styles */
+
+.account-menu ul, .journals-menu ul {
+  display: flex;
+  border-bottom: 2px solid rgba(158, 158, 158, 0.5);
+  margin: 20px;
+}
+
+.account-menu li, .journals-menu li {
+  color: #8bc34a;
+  width: 20%;
+  padding: 10px;
+  font-weight: bold;
+  border-right: 2px solid rgba(158, 158, 158, 0.7);
+}
+
+.account-menu li:first-child, .journals-menu li:first-child {
+  border-left: 2px solid rgba(158, 158, 158, 0.7);
+}
+
+.account-menu li:hover, .journals-menu li:hover {
+  cursor: pointer;
+}
+
+.account-menu li.chosen, .journals-menu li.chosen {
+  background-color: rgba(158, 158, 158, 0.7);
+  color: #fff;
+}
+
+.borrowed-books, .reserved-books, .readers, .readers-queue {
+  margin: 20px;
+}
+
+.borrowed-books__table, .reserved-books__table, .readers__table, .readers-queue__table {
+  width: 70%;
+  border-collapse: collapse;
+}
+
+.borrowed-books__table td, .borrowed-books__table th, .reserved-books td, .reserved-books th,
+.readers__table th, .readers__table td, .readers-queue__table th, .readers-queue__table td {
+  text-align: left;
+  padding: 10px;
+  border: 2px solid rgba(158, 158, 158, 0.7);
+}
+
+.borrowed-books__table td, .reserved-books td {
+  font-size: 12pt;
+}
+
+.borrowed-books__return-button, .reserved-books__return-button {
+  background-color: #8bc34a;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.borrowed-books__return-button:hover, .reserved-books__return-button:hover {
+  cursor: pointer;
+  box-shadow: 1px 1px 2px 1px rgba(158, 158, 158, 0.3);;
+}
+
+/* Book page */
+
+.book-description, .book-forms {
+  display: flex;
+  margin: 20px;
+}
+
+.book-forms {
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.book-description img {
+  width: 20%;
+}
+
+.book-description__info {
+  margin: 0 20px 0 20px;
+}
+
+.book-description__info p:first-child{
+  font-weight: bold;
+  font-size: 20pt;
+}
+
+.book-description__annotation {
+  margin-top: 10px;
+  font-size: 12pt;
+}
+
+.book-forms form {
+  width: 45%;
+  border-radius: 5px;
+  padding: 20px;
+  background-color: rgba(158, 158, 158, 0.3);
+}
+
+.book-forms p:first-child {
+  font-weight: bold;
+  font-size: 16pt;
+}
+
+.book-forms fieldset {
+  border: none;
+}
+
+.book-forms__input {
+  padding: 5px; 
+  width: 40%;
+  border-radius: 5px;
+  border: 1px solid #9e9e9e;
+}
+
+.book-forms input {  
+  margin: 10px 0 10px 0;
+}
